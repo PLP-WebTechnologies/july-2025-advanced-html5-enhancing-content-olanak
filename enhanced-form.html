@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Enhanced Form Example</h1>
+    </header>
+    
+    <main>
+       <!--Section 1: lists-->
+       <section>
+        <h2>Popular web Technologies</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Angular</li>
+            </ul>
+       </section>
+       <!--Section 2: Table-->
+       <section>
+        <h2>Web Technologies Comparison</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Type</th>
+                    <th>Popularity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Markup Language</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Style Sheet Language</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Scripting Language</td>
+                    <td>Very High</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        <!--Section 3: media-->
+        <section>
+            <h2>Media Content</h2>
+            <p>Here is an example of a video:</p>
+             <iframe width="560" height="315" src="https://www.youtube.com/watch?v=AQzD-j8017g&list=RDAQzD-j8017g&start_radio=1"" 
+             title="YouTube video player" 
+             frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>And here is an example of an audio file:</p>         
+            <audio controls>
+                <source src="example-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <p>Finally, here is an image:</p>
+            <img src="https://www.clipartmax.com/png/small/92-923825_download-online-shopping-free-png-photo-images-and-online-shopping-logo-png.png" alt="Example image" width="600">
+        </section>
+        <!--Section 4: HTML form-->
+        <section>
+            <h2>Registration  Form</h2>
+            <form action="#" method="post" width="500">
+                <fieldset class="personal-info">
+                <legend>Personal information:</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name here">  
+                <br>
+                <label for=""dob">Select your DoB:</label>
+                <calendar id="dob" name="dob" required>
+                <input type="date" id="dob" name="dob" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your Email"><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required="[0-9]{10}" placeholder="Enter your phone number"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Account details</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required minlength="4" placeholder="Enter  a username"><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6"  placeholder="Enter your password"><br>
+                    <label for="confirm-password">Confirm Password:</label>         
+                    <input type="password" id="confirm-password" name="confirm-password" required minlength="6" placeholder="Confirm your password"><br>
+                    <label for="Role">Role:</label>
+                    <select id="role" name="role" required>
+                        <option value="" disabled selected>Select your role</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="admin">Admin</option>    
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional information</legend>
+                    <label for="bio">Bio </label>
+                    <textarea id="bio" name="bio" rows="4" cols="50" required placeholder="Tell us about Yoursel"></textarea><br>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the terms and conditions            
+                </fieldset><br>
+
+                <button type="submit" value="Register">Submit</button>
+            </form>
+        </section>
+        <!--Section 5: Footer-->        
+        <footer>
+            <p>&copy; 2025 Olana Kenea. All rights reserved.</p>          
+        </footer>
+        </main>
+    </body>
+</html>
